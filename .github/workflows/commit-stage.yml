@@ -3,7 +3,7 @@ on: push
 
 env: 
   REGISTRY: ghcr.io
-  IMAGE_NAME: danielkrokovsky/catalog-service
+  IMAGE_NAME: danielkrokovsky/config-service
   VERSION: latest 
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         project: [
-          catalog-service
+          config-service
         ]
     steps:
       - name: Checkout source code
@@ -57,7 +57,7 @@ jobs:
       fail-fast: false
       matrix:
         project: [
-          catalog-service
+          config-service
         ]
     steps:
       - name: Checkout source code
